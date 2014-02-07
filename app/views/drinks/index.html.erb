@@ -1,22 +1,29 @@
 <div class="parent">
-	<div>
-	<center>
-		<h1 class="weather">It's <%= @t %>:<%= @time.min %>, what mood are you in?</h1>
-	</center>
-	</div>
-<%= link_to drinks_stouts_path(:id =>"stout") do%>
-<div class="stout">
-	<h1 class="titles">Stout</h1>
-</div>
-<% end %>
-<%= link_to drinks_pilsner_path(:id => "pilsner") do%>
-<div class="pilsner">
-	<h1 class="titles">Pilsner</h1>
-</div>
-<% end %>
-<%= link_to drinks_porter_path(:id => "porter") do%>
-<div class="porter">
-	<h1 class="titles">Porter</h1>
-</div>
-<% end %>
+		<div>
+			<center>
+				<h1 class="weather">It's <%= @t %>:<%= @time.min %>, what mood are you in?</h1>
+			</center>
+		</div>
+	<%= link_to drinks_pilsner_path(:id => "pilsner") do%>
+		<div class="pilsner">
+			<h1 class="titles">Pilsner</h1>
+		</div>
+	<% end %>
+	<%= link_to drinks_stouts_path(:id =>"stout") do%>
+		<div class="stout">
+			<h1 class="titles">Stout</h1>
+		</div>
+	<% end %>
+	<%= link_to drinks_ipa_path(:id => "ipa") do%>
+		<div class="ipa">
+			<h1 class="titles">IPA</h1>
+		</div>
+	<% end %>
+	<%= link_to drinks_porter_path(:id => "porter") do%>
+		<div class="porter">
+			<h1 class="titles">Porter</h1>
+		</div>
+	<% end %>
+
+
 </div>

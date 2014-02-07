@@ -51,4 +51,9 @@ class DrinksController < ApplicationController
     porter_json = open("http://lcboapi.com/products?q=porter").read
     @porter = JSON.parse(porter_json)
   end
+
+  def ipa
+    ipa_json = open("http://lcboapi.com/products?q=ipa").read
+    @ipa = JSON.parse(ipa_json)
+  end
 end

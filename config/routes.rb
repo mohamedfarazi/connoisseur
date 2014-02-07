@@ -3,6 +3,7 @@ Connoisseur::Application.routes.draw do
   get 'drinks_stouts' => "drinks#stouts"
   get 'drinks_pilsner' => "drinks#pilsner"
   get 'drinks_porter' => "drinks#porter"
+  get 'drinks_ipa' => "drinks#ipa"
   root to: 'drinks#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

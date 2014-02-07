@@ -1,0 +1,9 @@
+<div id="ipa">
+<div class="wrapper">
+<% @ipa['result'].each do |product| %>
+		  <section class="beers">
+		    <%= link_to product['name'], drink_path(product['id']) %>
+		  </section>
+		<% end %>
+		</div>
+</div>
