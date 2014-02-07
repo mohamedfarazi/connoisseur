@@ -41,4 +41,14 @@ class DrinksController < ApplicationController
     stouts_json = open("http://lcboapi.com/products?q=stout").read
     @stouts = JSON.parse(stouts_json)
   end
+
+  def pilsner
+    pilsner_json = open("http://lcboapi.com/products?q=pilsner").read
+    @pilsner = JSON.parse(pilsner_json)
+  end
+
+  def porter
+    porter_json = open("http://lcboapi.com/products?q=porter").read
+    @porter = JSON.parse(porter_json)
+  end
 end

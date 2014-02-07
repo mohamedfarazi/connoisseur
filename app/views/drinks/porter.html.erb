@@ -1,0 +1,6 @@
+<% @porter['result'].each do |product| %>
+		  <section>
+		    <%= link_to product['name'], drink_path(product['id']) %>
+		    <%= product['primary_category'] %> <%= product['secondary_category'] %>
+		  </section>
+		<% end %>

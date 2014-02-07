@@ -21,6 +21,8 @@ width: 25%;
 float: left;
 }
 
+h1 { margin: 0; padding 0; }
+
 .parent {
 	width: 100%;
 	height: 100%;
@@ -37,16 +39,16 @@ body {
     height:200px;
     position:absolute;
     left:50%;
-    top:50%;
+    top:20%;
     margin:-100px 0 0 -150px;
-    color: white;
+    color: #444546;
 }
 
 .stout {
 	background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/ca/Dark_storm_clouds.jpg);
 	width: 100%;
 	height: 300px;
-	margin-top: 30%;
+	/*margin-top: 10%;*/
 }
 
 .pilsner{
@@ -58,4 +60,5 @@ body {
 .porter {
 	background-image: url(http://www.secretsofthefed.com/wp-content/uploads/2013/04/The-Night-Sky-Wallpaper.jpg);
 	height: 300px;
+	color: white;
 }
