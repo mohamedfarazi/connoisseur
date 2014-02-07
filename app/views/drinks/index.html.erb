@@ -1,6 +1,18 @@
-<% @drinks['result'].each do |product| %>
-  <section>
-    <%= link_to product['name'], drinks_path(product['id']) %>
-    <%= product['primary_category'] %> <%= product['secondary_category'] %>
-  </section>
+<div class="parent">
+	<div>
+	<center>
+		<h1 class="weather">It's <%= @t %>:<%= @time.min %>, what mood are you in?</h1>
+	</center>
+	</div>
+<%= link_to drinks_stouts_path(:id =>"stout") do%>
+<div class="stout">
+	<h1>Stout</h1>
+</div>
 <% end %>
+<div class="pilsner">
+	<h1>Pilsner</h1>
+</div>
+<div class="porter">
+	<h1>Porter</h1>
+</div>
+</div>

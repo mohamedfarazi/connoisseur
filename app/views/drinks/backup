@@ -1,0 +1,38 @@
+<div class="beers">
+		<h1>Lagers</h1>
+		<% @drinks['result'].each do |product| %>
+		  <section>
+		    <%= link_to product['name'], drink_path(product['id']) %>
+		    <%= product['primary_category'] %> <%= product['secondary_category'] %>
+		  </section>
+		<% end %>
+	</div>
+
+		<%= link_to 'Next Page', drinks_path( :page => @drinks['pager']['next_page']) %>
+
+	<div class="stouts">
+		<h1>Stouts</h1>
+		<% @stouts['result'].each do |drink| %>
+			<section>
+				<p><strong>Beer name:</strong> <%= drink['name'] %></p>
+			</section>
+		<% end %>
+	</div>
+
+	<div class="porters">
+		<h1>Porter</h1>
+		<% @porters['result'].each do |drink| %>
+			<section>
+				<p><strong>Beer name:</strong> <%= drink['name'] %></p>
+			</section>
+			<% end %>
+	</div>
+
+	######## for show
+
+	<% @product['result'].each do |product| %>
+		  <section>
+		    <%= link_to product['name'], drink_path(product['id']) %>
+		    <%= product['primary_category'] %> <%= product['secondary_category'] %>
+		  </section>
+		<% end %>
