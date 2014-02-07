@@ -1,6 +1,9 @@
+<div id="stout">
+<div class="wrapper">
 <% @stouts['result'].each do |product| %>
-		  <section>
+		  <section class="beers">
 		    <%= link_to product['name'], drink_path(product['id']) %>
-		    <%= product['primary_category'] %> <%= product['secondary_category'] %>
 		  </section>
 		<% end %>
+		</div>
+</div>

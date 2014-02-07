@@ -11,15 +11,7 @@
  *= require_self
  *= require_tree .
  */
-.beers {
-	float: left;
-	width: 25%;
-}
 
-.stouts {
-width: 25%;
-float: left;
-}
 
 h1 { margin: 0; padding 0; }
 
@@ -79,4 +71,48 @@ body {
 	font-size: 4em;
 	font-family: "Helvetica Neue";
 	font-weight: 100;
+}
+
+#stout {
+	background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/ca/Dark_storm_clouds.jpg);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#pilsner {
+	background-image: url(http://2.bp.blogspot.com/-T0U9LYI-E8w/T4pINHQg5MI/AAAAAAAAB1k/VtC4XiM8atU/s1600/IMG_1112.JPG);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#porter {
+	background-image: url(http://www.secretsofthefed.com/wp-content/uploads/2013/04/The-Night-Sky-Wallpaper.jpg);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.wrapper {
+	margin-top: 5%;
+}
+.beers {
+	margin: auto;
+	display: block;
+	width: 20%;
+	vertical-align: center;
+	font-size: 1.3em;
+	font-family: "Helvetica Neue";
+	font-weight: 300;
+}
+
+.beers a{
+	text-decoration: none;
+	color: white;
+}
+
+.beers a:hover{
+	color: black;
+	fon
 }
